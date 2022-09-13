@@ -427,6 +427,7 @@ main {
         padding-bottom: 38px;
         .social-links {
             display: flex;
+            cursor: pointer;
             justify-content: space-between;
             div {
                 margin-left: 10px;
@@ -439,6 +440,7 @@ main {
                 justify-content: center;
                 align-items: center;
                 display: flex;
+                transition: all 0.5s ease;
             }
         }
         .contacts-adress {
@@ -507,3 +509,19 @@ main {
         }
     }
 }
+
+
+/*========*/
+.social-links div:active {
+    opacity: 0.8;
+}
+
+.social-links div:hover {
+    border: 2px solid black;
+    color: white;
+    background-color: #F13C6E !important ;
+    img {
+        filter: brightness(100);
+    }
+}
+/*========*/

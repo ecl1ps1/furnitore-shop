@@ -428,6 +428,7 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    cursor: pointer;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
@@ -447,7 +448,10 @@ main {
       align-items: center;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
   .contacts .contacts-row .contacts-adress span {
     font-family: 'Roboto';
     font-size: 14px;
@@ -513,3 +517,17 @@ main {
       font-size: 12px;
       font-weight: 400;
       color: #828282; }
+
+/*========*/
+.social-links div:active {
+  opacity: 0.8; }
+
+.social-links div:hover {
+  border: 2px solid black;
+  color: white;
+  background-color: #F13C6E !important; }
+  .social-links div:hover img {
+    -webkit-filter: brightness(100);
+    filter: brightness(100); }
+
+/*========*/
